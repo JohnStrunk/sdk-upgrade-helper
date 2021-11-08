@@ -68,7 +68,6 @@ func main() {
 
 	if err = (&controllers.ReplicationSourceReconciler{
 		Client: mgr.GetClient(),
-		Log:    ctrl.Log.WithName("controllers").WithName("ReplicationSource"),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {
 		setupLog.Error(err, "unable to create controller", "controller", "ReplicationSource")
@@ -76,7 +75,6 @@ func main() {
 	}
 	if err = (&controllers.ReplicationDestinationReconciler{
 		Client: mgr.GetClient(),
-		Log:    ctrl.Log.WithName("controllers").WithName("ReplicationDestination"),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {
 		setupLog.Error(err, "unable to create controller", "controller", "ReplicationDestination")
