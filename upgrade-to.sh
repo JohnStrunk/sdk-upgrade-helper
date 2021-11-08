@@ -57,5 +57,6 @@ cd "$scriptdir"
 # Commit changes
 rm -f osdk
 
+echo "Committing changes..."
 git add .
 git commit -s -m "Upgrade to ${OPERATOR_SDK_VERSION}"
