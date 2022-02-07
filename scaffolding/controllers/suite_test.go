@@ -1,5 +1,5 @@
 /*
-Copyright 2021 The VolSync authors.
+Copyright 2022 The VolSync authors.
 */
 
 package controllers
@@ -49,9 +49,6 @@ var _ = BeforeSuite(func() {
 	cfg, err := testEnv.Start()
 	Expect(err).NotTo(HaveOccurred())
 	Expect(cfg).NotTo(BeNil())
-
-	err = volsyncv1alpha1.AddToScheme(scheme.Scheme)
-	Expect(err).NotTo(HaveOccurred())
 
 	err = volsyncv1alpha1.AddToScheme(scheme.Scheme)
 	Expect(err).NotTo(HaveOccurred())

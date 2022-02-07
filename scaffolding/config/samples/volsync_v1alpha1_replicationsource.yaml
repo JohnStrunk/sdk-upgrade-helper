@@ -3,4 +3,4 @@ kind: ReplicationSource
 metadata:
   name: replicationsource-sample
 spec:
-  # Add fields here
+  # TODO(user): Add fields here
