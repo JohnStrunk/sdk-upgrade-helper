@@ -3,8 +3,8 @@ Copyright 2022 The VolSync authors.
 */
 
 // Package v1alpha1 contains API Schema definitions for the volsync v1alpha1 API group
-//+kubebuilder:object:generate=true
-//+groupName=volsync.backube
+// +kubebuilder:object:generate=true
+// +groupName=volsync.backube
 package v1alpha1
 
 import (
