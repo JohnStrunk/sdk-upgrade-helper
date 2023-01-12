@@ -1,5 +1,5 @@
 /*
-Copyright 2022 The VolSync authors.
+Copyright 2023 The VolSync authors.
 */
 
 // Package v1alpha1 contains API Schema definitions for the volsync v1alpha1 API group
