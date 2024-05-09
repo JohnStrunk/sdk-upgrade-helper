@@ -1,7 +1,3 @@
-/*
-Copyright 2024 The VolSync authors.
-*/
-
 package v1alpha1
 
 import (

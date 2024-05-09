@@ -1,7 +1,3 @@
-/*
-Copyright 2024 The VolSync authors.
-*/
-
 package main
 
 import (
@@ -20,7 +16,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
 	volsyncv1alpha1 "github.com/backube/volsync/api/v1alpha1"
-	"github.com/backube/volsync/controllers"
+	"github.com/backube/volsync/internal/controller"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -77,14 +73,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	if err = (&controllers.ReplicationSourceReconciler{
+	if err = (&controller.ReplicationSourceReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {
 		setupLog.Error(err, "unable to create controller", "controller", "ReplicationSource")
 		os.Exit(1)
 	}
-	if err = (&controllers.ReplicationDestinationReconciler{
+	if err = (&controller.ReplicationDestinationReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {

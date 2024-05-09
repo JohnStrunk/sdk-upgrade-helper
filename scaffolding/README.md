@@ -78,5 +78,3 @@ More information can be found via the [Kubebuilder Documentation](https://book.k
 
 ## License
 
-Copyright 2024 The VolSync authors.
-
