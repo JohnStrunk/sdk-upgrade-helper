@@ -22,8 +22,8 @@ type ReplicationSourceStatus struct {
 	// Important: Run "make" to regenerate code after modifying this file
 }
 
-//+kubebuilder:object:root=true
-//+kubebuilder:subresource:status
+// +kubebuilder:object:root=true
+// +kubebuilder:subresource:status
 
 // ReplicationSource is the Schema for the replicationsources API
 type ReplicationSource struct {
@@ -34,7 +34,7 @@ type ReplicationSource struct {
 	Status ReplicationSourceStatus `json:"status,omitempty"`
 }
 
-//+kubebuilder:object:root=true
+// +kubebuilder:object:root=true
 
 // ReplicationSourceList contains a list of ReplicationSource
 type ReplicationSourceList struct {

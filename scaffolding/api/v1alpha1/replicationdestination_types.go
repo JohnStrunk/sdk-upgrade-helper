@@ -22,8 +22,8 @@ type ReplicationDestinationStatus struct {
 	// Important: Run "make" to regenerate code after modifying this file
 }
 
-//+kubebuilder:object:root=true
-//+kubebuilder:subresource:status
+// +kubebuilder:object:root=true
+// +kubebuilder:subresource:status
 
 // ReplicationDestination is the Schema for the replicationdestinations API
 type ReplicationDestination struct {
@@ -34,7 +34,7 @@ type ReplicationDestination struct {
 	Status ReplicationDestinationStatus `json:"status,omitempty"`
 }
 
-//+kubebuilder:object:root=true
+// +kubebuilder:object:root=true
 
 // ReplicationDestinationList contains a list of ReplicationDestination
 type ReplicationDestinationList struct {

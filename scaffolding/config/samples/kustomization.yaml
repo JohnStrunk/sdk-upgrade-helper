@@ -2,4 +2,4 @@
 resources:
 - volsync_v1alpha1_replicationsource.yaml
 - volsync_v1alpha1_replicationdestination.yaml
-#+kubebuilder:scaffold:manifestskustomizesamples
+# +kubebuilder:scaffold:manifestskustomizesamples
