@@ -7,7 +7,7 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// ReplicationSourceSpec defines the desired state of ReplicationSource
+// ReplicationSourceSpec defines the desired state of ReplicationSource.
 type ReplicationSourceSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
@@ -16,7 +16,7 @@ type ReplicationSourceSpec struct {
 	Foo string `json:"foo,omitempty"`
 }
 
-// ReplicationSourceStatus defines the observed state of ReplicationSource
+// ReplicationSourceStatus defines the observed state of ReplicationSource.
 type ReplicationSourceStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
@@ -25,7 +25,7 @@ type ReplicationSourceStatus struct {
 // +kubebuilder:object:root=true
 // +kubebuilder:subresource:status
 
-// ReplicationSource is the Schema for the replicationsources API
+// ReplicationSource is the Schema for the replicationsources API.
 type ReplicationSource struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
@@ -36,7 +36,7 @@ type ReplicationSource struct {
 
 // +kubebuilder:object:root=true
 
-// ReplicationSourceList contains a list of ReplicationSource
+// ReplicationSourceList contains a list of ReplicationSource.
 type ReplicationSourceList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
